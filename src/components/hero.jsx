@@ -123,7 +123,7 @@ const Hero = () => {
                                     <div className='-mt-[26px] block xl:hidden'>
                                         <Line />
                                     </div>
-                                    <div className='-mt-5 hidden xl:block'>
+                                    <div className='-mt-4 hidden xl:block'>
                                         <Line2 />
                                     </div>
                                 </div>
