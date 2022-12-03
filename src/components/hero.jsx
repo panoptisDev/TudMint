@@ -59,7 +59,7 @@ const Hero = () => {
                 <main className="mt-16 lg:mt-24 3xl:mt-36 z-20">
                     <div className="mx-auto max-w-[1200px]">
                         <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-8 max-w-[360px] lg:max-w-none m-auto pl-3 md:pl-0">
-                            <div className="px-1 md:pl-5 lg:pl-6 xl:px-6 xl:pl-0 md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
+                            <div className="px-1 md:pl-5 lg:pl-6 xl:px-6 md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
                                 <div>
                                     <h1 className="mt-[380px] lg:mt-0 text-white text-5xl lg:text-[74px] font-semibold font-gilroyMedium tracking-wider lg:leading-[74px]">
                                         Exclusive nft <br /> <span className='bg-gradient-to-r from-[#B1A6F5] via-[#6252E2] to-[#3DB7CF] bg-clip-text text-transparent'>Collection</span> <br /> Тud Mint
