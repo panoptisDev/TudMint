@@ -1,34 +1,34 @@
 <svg width="1920" height="1000" viewBox="0 0 1920 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.02" clip-path="url(#clip0_14_810)">
-                        <path d="M60 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M160 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M260 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M360 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M460 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M560 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M660 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M760 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M860 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M960 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M1060 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M1160 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M1260 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M1360 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M1460 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M1560 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M1660 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M1760 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M1860 0V1800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M0 100L1920 99.9998" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M0 200L1920 200" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M0 300L1920 300" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M0 400L1920 400" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M0 500L1920 500" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M0 600L1920 600" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M0 700L1920 700" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M0 800L1920 800" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M0 900L1920 900" stroke="#FDFEFF" stroke-width="2" />
-                        <path d="M0 1000L1920 1000" stroke="#FDFEFF" stroke-width="2" />
+                        <path d="M60 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M160 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M260 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M360 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M460 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M560 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M660 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M760 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M860 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M960 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M1060 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M1160 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M1260 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M1360 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M1460 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M1560 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M1660 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M1760 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M1860 0V1800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M0 100L1920 99.9998" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M0 200L1920 200" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M0 300L1920 300" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M0 400L1920 400" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M0 500L1920 500" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M0 600L1920 600" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M0 700L1920 700" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M0 800L1920 800" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M0 900L1920 900" stroke="#FDFEFF" strokeWidth="2" />
+                        <path d="M0 1000L1920 1000" stroke="#FDFEFF" strokeWidth="2" />
                     </g>
                     <defs>
                         <clipPath id="clip0_14_810">
